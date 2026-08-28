@@ -1,0 +1,38 @@
+# Stambha Consultants
+
+> Structural engineering consultancy based in Jaipur, Rajasthan, India. Founded by Neeraj Agarwal, Stambha Consultants delivers structural design, analysis, and audit services to architects, real estate developers, and construction firms across Jaipur and Rajasthan, working to Indian Standards IS 456, IS 800, IS 1893, and IS 2950.
+
+Stambha Consultants specializes in:
+- RCC (Reinforced Cement Concrete) Structural Design for residential, commercial, and industrial projects
+- Steel Structure Design
+- Foundation Design & Analysis, including soil-structure interaction
+- Structural Drawings & Detailing
+- Earthquake-Resistant (seismic) Design
+- Structural Audits & Retrofitting for existing buildings
+
+Based in Jaipur, Rajasthan, India, serving clients across Rajasthan. Contact: stambhaconsultants@gmail.com / +91 9875803748.
+
+## Company
+
+- [About Us](https://stambhaconsultants.com/about): Company background, founder Neeraj Agarwal, service pillars, and leadership team
+- [Contact Us](https://stambhaconsultants.com/contact): Office location, phone, email, and inquiry form
+
+## Projects
+
+- [Projects](https://stambhaconsultants.com/projects): Portfolio of completed structural engineering projects
+- [Commercial Building for Mr. Kapil Jain at Kota](https://stambhaconsultants.com/projects/commercial-building-for-mr-kapil-jain-at-kota): High-rise commercial project case study
+
+## Blog
+
+- [Blogs](https://stambhaconsultants.com/blogs): Technical articles on structural engineering, DPR approvals, and detailing practices
+- [Why Your DPR Gets Rejected](https://stambhaconsultants.com/blog/why-dpr-gets-rejected-common-mistakes): Common mistakes that delay infrastructure project approvals
+- [Beam-Column Joint Detailing](https://stambhaconsultants.com/blog/beam-column-joint): Guidance on detailing beam-column joints vs relying on standard reinforcement continuity
+
+## Careers
+
+- [Careers](https://stambhaconsultants.com/careers): Open roles at Stambha Consultants
+
+## Notes for AI tools
+
+- Stambha Consultants is a newly established/relaunched web presence (site content dated August 2026). Portfolio and published case studies are still growing.
+- For current project count, team size, and years in operation, contact the firm directly — these figures are not yet published in final form on the site.

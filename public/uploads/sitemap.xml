@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+       <loc>https://stambhaconsultants.com/</loc>
+       <lastmod>2026-08-17T07:44:44+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://stambhaconsultants.com/about</loc>
+       <lastmod>2026-08-17T07:44:44+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://stambhaconsultants.com/projects</loc>
+       <lastmod>2026-08-17T07:44:44+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://stambhaconsultants.com/careers</loc>
+       <lastmod>2026-08-17T07:44:44+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://stambhaconsultants.com/contact</loc>
+       <lastmod>2026-08-17T07:44:44+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://stambhaconsultants.com/blog/why-dpr-gets-rejected-common-mistakes</loc>
+       <lastmod>2026-08-17T07:44:44+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://stambhaconsultants.com/blog/beam-column-joint</loc>
+       <lastmod>2026-08-17T07:44:44+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+  </url>
+</urlset>

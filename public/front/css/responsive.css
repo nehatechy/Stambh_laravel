@@ -1,0 +1,51 @@
+@media screen and (max-width: 1024px){
+    .career-grid {
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .carrer-box {
+    flex-direction:column;
+    gap: 10px;
+    padding: 20px 40px;
+    }
+}
+@media screen and (max-width: 768px){
+ .portfolio-grid-layout{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .item-1 {
+  grid-column: span 4;
+  height: 500px;
+}
+.item-2, .item-1, .item-3, .item-4, .item-5 {
+ 
+  height: auto;
+}
+.counter-box{
+    text-align: center;
+}
+.grid-container {
+    grid-template-columns: 1fr;
+}
+}
+@media screen and (max-width: 560px) {
+    .hero-slider-arrows{display:none;}
+    .home_contact {
+        padding: 1rem;
+                font-size: 13px;
+        letter-spacing: -0.01em;
+    }
+    .portfolio-grid-layout{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .item-1 {
+      grid-column: revert-rule;
+      height: auto;
+    }
+    .navbar-brand img{
+        height:40px;
+    }
+    .hero-slide {
+    height: 80vh;
+    }
+    
+}
