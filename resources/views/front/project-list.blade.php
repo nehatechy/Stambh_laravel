@@ -189,18 +189,25 @@
     justify-content: center;
     overflow: hidden;
   }
+
+  .modal-slider{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
  
-  .modal-slider-wrap .slick-slide{
+  .modal-slide-item{
+    width: 100%;
+    height: 100vh;
     display: flex !important;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     background: #000;
   }
  
-  .modal-slider-wrap .slick-slide img{
+  .modal-slide-item img{
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 90vh;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -212,7 +219,7 @@
   .modal-slider-wrap .slick-next{
     width: 44px;
     height: 44px;
-    z-index: 5;
+    z-index: 10;
   }
   .modal-slider-wrap .slick-prev{ left: 18px; }
   .modal-slider-wrap .slick-next{ right: 18px; }
@@ -221,10 +228,12 @@
   .modal-slider-wrap .slick-next:before{
     font-size: 40px;
     opacity: 0.9;
+    color: #ffffff;
   }
  
   .modal-slider-wrap .slick-dots{
     bottom: 22px;
+    z-index: 10;
   }
   .modal-slider-wrap .slick-dots li button:before{
     color: #fff;
@@ -353,7 +362,7 @@
                                     <div class="modal-slider-wrap">
                                         <div class="modal-slider">
                                             @foreach($projectImages as $image)
-                                                <div><img src="{{ asset($image) }}" alt="{{ $project->title }}" /></div>
+                                                <div class="modal-slide-item"><img src="{{ asset($image) }}" alt="{{ $project->title }}" /></div>
                                             @endforeach
                                         </div>
                                     </div>

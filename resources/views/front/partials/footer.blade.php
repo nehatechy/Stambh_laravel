@@ -34,7 +34,7 @@
                             class="ft_head">Quick
                             Links</h5>
                         <ul class="ft_menu">
-                            <li><a href="javascript:void(0)"
+                            <li><a href="{{ route('services.bim-modelling') }}"
                                     class="">BIM Modelling</a></li>
                             <li><a href="{{ route('blogs') }}"
                                     class="">Blogs</a></li>

@@ -2,12 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Blog;
-use App\Http\Controllers\ProfileController;
+// use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Front\BlogController as FrontBlogController;
 use App\Http\Controllers\Front\HomeController as FrontHomeController;
 use App\Http\Controllers\Front\ProjectController as FrontProjectController;
 use App\Http\Controllers\Front\CareerController as FrontCareerController;
 use App\Http\Controllers\Front\ContactController as FrontContactController;
+use App\Http\Controllers\Front\ServiceController as FrontServiceController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\BlogController;
@@ -35,6 +36,14 @@ Route::get('/contact', function () {
     return view('front.contact');
 })->name('contact');
 
+// Service Pages
+Route::get('/structural-audit-jaipur', [FrontServiceController::class, 'structuralAudit'])->name('services.structural-audit');
+Route::get('/industrial-structural-engineering', [FrontServiceController::class, 'industrialStructural'])->name('services.industrial-structural');
+Route::get('/peb-structural-design', [FrontServiceController::class, 'pebDesign'])->name('services.peb-design');
+Route::get('/dpr-preparation-services', [FrontServiceController::class, 'dprPreparation'])->name('services.dpr-preparation');
+Route::get('/bim-modelling-services', [FrontServiceController::class, 'bimModelling'])->name('services.bim-modelling');
+Route::post('/services/inquiry', [FrontServiceController::class, 'submitInquiry'])->name('services.inquiry.submit');
+
 Route::get('/blog', [FrontBlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{slug}', [FrontBlogController::class, 'show'])->name('blog.show');
 Route::get('/projects', [FrontProjectController::class, 'list'])->name('projects.list');
@@ -48,17 +57,12 @@ Route::middleware('auth')->get('/dashboard', function () {
 // Add your other frontend routes here (blog list/detail, projects list/detail, career)
 
 
-/*
-|--------------------------------------------------------------------------
-| Breeze Profile Routes (default, keep as-is)
-|--------------------------------------------------------------------------
-*/
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
+// Breeze Profile Routes (optional)
+// Route::middleware('auth')->group(function () {
+//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+// });
 
 
 /*

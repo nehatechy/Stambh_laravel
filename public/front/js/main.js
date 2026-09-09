@@ -48,6 +48,17 @@ $(document).ready(function() {
         }
     });
 
+    // Mobile Dropdown Services Toggle
+    $('#mobile-services-toggle').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var $this = $(this);
+        $this.toggleClass('active');
+        var isExpanded = $this.hasClass('active');
+        $this.attr('aria-expanded', isExpanded);
+        $('#mobile-services-menu').slideToggle(300);
+    });
+
     // Close mobile nav when clicking on link
     $('.mobile-nav-panel a').click(function() {
         $('.mobile-nav-panel').removeClass('active');
@@ -168,26 +179,23 @@ $(document).ready(function() {
     });
  
     // Track which modal sliders have been initialized (slick needs visible container)
-    var initializedModals = {};
- 
-    $('.modal.full-modal').on('shown.bs.modal', function () {
-      var modalId = $(this).attr('id');
+    $(document).on('shown.bs.modal', '.modal.full-modal', function () {
       var $slider = $(this).find('.modal-slider');
- 
-      if (!initializedModals[modalId]) {
-        $slider.slick({
-          arrows: true,
-          dots: true,
-          autoplay: false,
-          infinite: true,
-          speed: 500,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          adaptiveHeight: false
-        });
-        initializedModals[modalId] = true;
-      } else {
-        $slider.slick('setPosition');
+      if ($slider.length) {
+        if (!$slider.hasClass('slick-initialized')) {
+          $slider.slick({
+            arrows: true,
+            dots: true,
+            autoplay: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: false
+          });
+        } else {
+          $slider.slick('setPosition');
+        }
       }
     });
  
